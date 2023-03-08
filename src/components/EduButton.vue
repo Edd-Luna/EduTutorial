@@ -15,6 +15,7 @@
 </template>
 
 <script setup lang="ts">
+
 import { ref, watch } from 'vue';
 
 // El hecho de que sea una compiler macro implica que NO debes importarla explicitamente

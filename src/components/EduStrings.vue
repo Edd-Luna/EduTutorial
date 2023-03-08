@@ -10,6 +10,7 @@
 </template>
 
 <script setup lang="ts">
+
 import { ref } from 'vue';
 const props = defineProps<{ numberProp: number}>()
 const strings = ref("1")
