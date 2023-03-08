@@ -3,7 +3,7 @@
         <h6>Hola Jefecito <span class=text-primary>{{ counter }}</span></h6>
         <div class="btn-group">
             <button class="btn btn-success" @click="() => counter += 1"> Aumentar </button>
-            <button class="btn btn-success" @click="() => counter = 0">Reiniciar</button>
+            <button class="btn btn-success" @click="() => {$emit('biteAss', counter); counter = 0}">Reiniciar</button>
         </div>
     </div>
         <h5>Props String <span class=text-success>{{ stringProp }} </span></h5>
@@ -26,7 +26,7 @@ import { ref, watch } from 'vue';
 // P.EJ: aquí usaríamos props.stringProp para referirnos a lo que en el template nos referiríamos
 // como stringProp
 const props = defineProps<{ stringProp: string, comp: Object }>()
-const emit = defineEmits<{(e: 'biteAss'): void}>()
+const emit = defineEmits<{(e: 'biteAss', v:number): void}>()
 
 watch(() => props.stringProp, () => {
     console.log("StringProp cambió", props.stringProp)
