@@ -1,5 +1,5 @@
 <template>
-    <div class="input-group">
+    <div class="my-4 input-group">
         <input class="form-control" type="text" v-model="inputText">
         <button class="btn btn-warning" @click="() => titleText = inputText">Publicar</button>
         <button class="btn btn-warning" @click="() => titleText = '' ">Borrar</button>
