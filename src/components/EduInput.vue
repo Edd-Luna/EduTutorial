@@ -5,7 +5,7 @@
         <button class="btn btn-warning" @click="() => titleText = '' ">Borrar</button>
     </div>
     <div class="badge bg-primary text-wrap text-center mx-auto mt-4" style="width: 20rem; min-height: 5rem;">
-        <h2 >{{ titleText }}</h2>
+        <h2 >{{ titleText }} 3</h2>
     </div>
 </template>
 
